@@ -8,6 +8,8 @@
             "cacheVariables": {
                 "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
                 "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+                "VCPKG_OVERLAY_TRIPLETS":"$env{VCPKG_OVERLAY_TRIPLETS}",
+                "VCPKG_TARGET_TRIPLET": "$env{VCPKG_TARGET_TRIPLET}",
                 "CMAKE_CXX_STANDARD": "20",
                 "CMAKE_CXX_STANDARD_REQUIRED": "ON"
             }
@@ -48,8 +50,8 @@
                 "debug"
             ],
             "cacheVariables": {
-                "CMAKE_CXX_COMPILER": "cl",
-                "CMAKE_CXX_FLAGS": "/permissive- /W4 /w44365 /external:W3 /WX"
+                "CMAKE_CXX_COMPILER": "clang-cl",
+                "CMAKE_CXX_FLAGS": "/permissive- /W4 /w44365 /external:W3"
             }
         },
         {
@@ -64,7 +66,7 @@
                 "release"
             ],
             "cacheVariables": {
-                "CMAKE_CXX_COMPILER": "cl"
+                "CMAKE_CXX_COMPILER": "clang-cl"
             }
         },
         {
