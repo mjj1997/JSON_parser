@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 
-project(JsonParser VERSION 0.1 LANGUAGES CXX)
+project(JsonParser VERSION 0.2 LANGUAGES CXX)
 
 option(BUILD_SHARED_LIBS "build JSON parser shared library" ON)
 option(BUILD_STATIC_LIBS "build JSON parser static library" ON)
